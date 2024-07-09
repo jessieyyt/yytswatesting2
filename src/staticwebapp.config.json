@@ -1,8 +1,4 @@
 {
-  "networking":
-  {
-	  "allowedIpRanges": ["AzureFrontDoor.Backend"]
-	},
   "forwardingGateway":
   { 
 	  "requiredHeaders": {
