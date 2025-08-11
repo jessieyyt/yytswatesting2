@@ -1,6 +1,5 @@
 {
-  
-auth": {
+  "auth": {
     "login": {
       "tokenStore": {
         "enabled": true,
