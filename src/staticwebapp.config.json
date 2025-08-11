@@ -10,11 +10,11 @@
     },
     {
       "route": "/logout",
-      "redirect": "/.auth/logout"
+      "redirect": "/.auth/aad/logout"
     },
     {
       "route": "/login",
-      "redirect": "/.auth/login"
+      "redirect": "/.auth/aad/login"
     }
   ]
 }
