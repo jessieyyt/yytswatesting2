@@ -1,4 +1,13 @@
 {
+  
+auth": {
+    "login": {
+      "tokenStore": {
+        "enabled": true,
+        "tokenRefreshExtensionHours": 72
+      }
+    }
+  },
   "routes": [
     {
       "route": "/anonymous/*",
