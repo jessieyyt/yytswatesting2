@@ -1,21 +1,14 @@
 {
-  "auth": {
-    "identityProviders": {
-      "azureActiveDirectory": {
-        "registration": {
-          "openIdIssuer": "https://login.microsoftonline.com/72f988bf-86f1-41af-91ab-2d7cd011db47/v2.0",
-          "clientIdSettingName": "5fad1316-6a18-4378-b105-672b1139e8bf"
-        }
-      }
-    },
-    "login": {
-      "tokenStore": {
-        "enabled": true,
-        "tokenRefreshExtensionHours": 72,
-        "azureBlobStorage": {
-          "sasUrlSettingName": "WEBSITE_AUTH_TOKEN_CONTAINER_SASURL"
-        }
-      }
+  "routes": [
+    {
+      "route": "/*",
+      "allowedRoles": ["authenticated"]
+    }
+  ],
+  "responseOverrides": {
+    "401": {
+      "statusCode": 302,
+      "redirect": "/.auth/login/aad"
     }
   }
 }
