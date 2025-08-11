@@ -13,10 +13,6 @@
       "allowedRoles": ["anonymous", "authenticated"]
     },
     {
-      "route": "/.auth/refresh",
-      "allowedRoles": ["anonymous", "authenticated"]
-    },
-    {
       "route": "/login",
       "redirect": "/.auth/login/aad"
     },
