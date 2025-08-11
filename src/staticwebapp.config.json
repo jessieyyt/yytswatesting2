@@ -7,6 +7,14 @@
     {
       "route": "/authenticated/*",
       "allowedRoles": ["authenticated"]
+    },
+    {
+      "route": "/logout",
+      "redirect": "/.auth/logout"
+    },
+    {
+      "route": "/login",
+      "redirect": "/.auth/login"
     }
   ]
 }
