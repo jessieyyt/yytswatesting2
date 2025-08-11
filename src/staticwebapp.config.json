@@ -9,12 +9,16 @@
       "allowedRoles": ["authenticated"]
     },
     {
-      "route": "/logout",
-      "redirect": "/.auth/aad/logout"
+      "route": "/.auth/login/aad/callback",
+      "allowedRoles": ["anonymous", "authenticated"]
     },
     {
       "route": "/login",
-      "redirect": "/.auth/aad/login"
+      "redirect": "/.auth/login/aad"
+    },
+    {
+      "route": "/logout",
+      "redirect": "/.auth/logout/aad"
     }
   ]
 }
